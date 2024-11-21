@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Løkker</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liker ikke løkker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Oppgaver:</h1>
-    <div id="tasks">
-        <h3>Oppgave 1:</h3>
-        <p>Lag en loop som teller til 10</p>
-        <pre>
-for (let i = 1; i <= 10; i++) {
-    console.log(i);
-}
-        </pre>
 
-        <h3>Oppgave 2:</h3>
-        <p>Lag en loop som kjører så lenge tallet i en variabel er over 0</p>
-        <pre>
-let number = 5; // Du kan sette variabelen til ønsket startverdi
-while (number > 0) {
-    console.log(`Tallet er: ${number}`);
-    number--; // Reduserer tallet med 1 hver iterasjon
+  <h1>Oppgaver:</h1>
+  <div id="tasks">
+      <h3>Oppgave 1:</h3>
+      <p>Lag en loop som teller til 10</p>
+      <pre>
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
 }
-        </pre>
-    </div>
-    <h2>Oppgave 3:</h2>
-    <p>Trykk på knappen for å starte spillet. Trykk på Space for å gå videre.</p>
-    <button id="start-game">Start Spill</button>
-    <div id="game-output"></div>
-    <script src="game.js"></script>
+      </pre>
+
+      <h3>Oppgave 2:</h3>
+      <p>Lag en loop som kjører så lenge tallet i en variabel er over 0</p>
+      <pre>
+          let number = 10; // Sett startverdien for variabelen
+
+          while (number > 0) {
+              console.log(number); // Gjør noe, f.eks. skriv ut verdien
+              number--; // Reduser variabelen
+}
+      </pre>
+  </div>
+
+  <div class="game-container">
+    <h1>Terningkast Spill</h1>
+    <p id="message">Trykk på "Kast Terning" for å starte!</p>
+    <p>Helse: <span id="health">100</span></p>
+    <button id="rollButton">Kast Terning</button>
+  </div>
+  <script src="games.js"></script>
 </body>
 </html>
